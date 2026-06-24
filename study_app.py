@@ -25,7 +25,7 @@ if 'generated_content' not in st.session_state:
 if 'study_progress' not in st.session_state:
     st.session_state.study_progress = {}
 
-def get_ai_response(prompt, model="arcee-ai/trinity-large-preview:free"):
+def get_ai_response(prompt, model="openrouter/free"):
     """Get response from OpenRouter API"""
     try:
         client = OpenAI(
